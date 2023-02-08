@@ -4,10 +4,33 @@ public class Route {
     private static int number;
     private static String name;
 
-    private static void reRoute(){}
-    private static void addStop(){}
-    private static void routeProgress(){}
-    private static void eta(){}
-    public static void main(String[] args){}
+    protected static void reRoute(){}
+    protected static void addStop(){}
+    protected static void routeProgress(){}
+    protected static void eta(){}
+    protected static void main(String[] args){}
 
+}
+
+class Trail extends Route {
+    private String terrainType;
+    private int rating;
+    private int difficultyLevel;
+    public void currentAltitude(){}
+
+}
+
+class Highway extends Route{
+    private boolean isTollRoad;
+    private int speedLimit;
+
+    public void getSpeedLimit(){}
+}
+
+class Flight extends Route{
+    private int boardingTime;
+    private int gateNum;
+    private String airportName;
+
+    public void getSeatAssignment(){}
 }
