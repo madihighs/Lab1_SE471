@@ -2,7 +2,7 @@ public class CharterBus extends Bus{
 
     private String companyName;
 
-    /** Constructor*/
+    /** Full Constructor*/
     public CharterBus(String make, String model, int capacity, int busID, int plateNO, String busDriver, String city, String companyName) {
         super(make, model, capacity, busID, plateNO, busDriver, city);
         this.companyName = companyName;

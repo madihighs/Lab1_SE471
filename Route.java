@@ -7,13 +7,16 @@ public class Route {
     private Point currentPosition;
     private int routeNumber;
     private String routeName;
+    private Schedule schedules[];
 
     /** Constructor*/
-    public Route(Point start_point, Point end_point, int routeNumber, String name) {
+    public Route(Point start_point, Point end_point, int routeNumber, String routeName) {
         this.start_point = start_point;
         this.end_point = end_point;
+        this.currentPosition = currentPosition;
         this.routeNumber = routeNumber;
-        this.routeName = name;
+        this.routeName = routeName;
+        this.schedules = schedules;
     }
 
     /** Special Functionality*/
